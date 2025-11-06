@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(99,102,241,0.12), transparent 10%),
+                linear-gradient(135deg, #0f172a 0%, #020617 100%);
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #e6eef8;
+    padding: 24px;
+}
+
+
+
+.box{
+    width: 380px;
+    max-width: calc(100% - 48px);
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    backdrop-filter: blur(6px);
+}
+
+.box .heading{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #f8fafc;
+}
+
+.form-group{ margin-top: 10px; }
+.form-group label{
+    display: block;
+    font-size: 13px;
+    color: rgba(230,238,248,0.8);
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.02);
+    color: #e6eef8;
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow 180ms ease, border-color 180ms ease, transform 120ms ease;
+}
+
+input::placeholder{ color: rgba(230,238,248,0.5); }
+
+input:focus{
+    border-color: rgba(59,130,246,0.9);
+    box-shadow: 0 6px 18px rgba(59,130,246,0.08);
+    transform: translateY(-1px);
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg,#06b6d4,#3b82f6);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 8px 24px rgba(59,130,246,0.18);
+}
+
+.small{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: rgba(230,238,248,0.75);
+}
+
+
+@media (max-width: 420px){
+    .box{ padding: 20px; }
+    .box .heading{ font-size: 20px; }
+}
+
+
+.debug-outline{ outline: 1px dashed rgba(255,255,255,0.02); }
+

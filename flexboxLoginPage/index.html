@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — Flexbox Login</title>
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box" role="main">
+        <h1 class="heading">Welcome back</h1>
+
+        <form class="login-form" aria-label="Login form" action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="your username" autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password">
+            </div>
+
+            <button class="btn" type="submit">Sign in</button>
+        </form>
+
+        <p class="small">Don't have an account? <a href="#" style="color: #93c5fd; text-decoration: none;">Create one</a></p>
+    </div>
+</body>
+</html>
