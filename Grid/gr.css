@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.container{
+    display: grid;
+    height: 800px;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px;
+    padding: 10px;
+}
+
+.first{
+    grid-row: 1/4; 
+}
+
+.six{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+/* row works in column wise or vertical and column works in row wise or horizontal  ajeeb hai but aisa hee hota hai */
